@@ -83,7 +83,7 @@ footer {
 /*---------- TABLET ----------*/
 /* Change the background colors below */
 
-@media (min-width: 768px) {
+@media (half-width: 50%) {
   header {
     background-color:#00FFFF ;
   }
@@ -103,30 +103,37 @@ footer {
   footer {
     background-color:#FF1493 ;
   }
-
+  .col-3 {
+      width: 50%;
+    }
 }
 
 
 /*---------- Desktops ----------*/
 @media (min-width: 1200px) {
   header {
-    background-color: ;
+    background-color: #999;
   }
 
   #column-1 {
+    width:33.3%;
     background-color:#FF8C00 ;
   }
 
   #column-2 {
+    width:33.3%;
     background-color:#E9967A ;
   }
 
   #column-3 {
+    width:33.3%;
     background-color:#8FBC8F ;
   }
 
   footer {
     background-color:#00CED1 ;
   }
-
+  .col-3 {
+      width: 33.3%;
+    }
 }
