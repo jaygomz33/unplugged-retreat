@@ -18,6 +18,23 @@
     line-height: 1.4;
 }
 
+body {
+       font-family: 'Josefin+Sans', Poppins;
+       font-size: 1em;
+}
+
+h2 {
+     font-family:  'Josefin+Sans', Poppins;
+}
+
+h3,
+h4 {
+     font-family:  'Josefin+Sans', Poppins;
+}
+a {
+     color: #e2e3ed;
+     text-decoration: none;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -101,7 +118,56 @@ textarea {
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* ==========================================================================
+      Author's custom styles
+      ========================================================================== */
+   /* General Styles */
 
+   html {
+
+   }
+
+   body {
+
+   }
+
+   ul,
+   ol {
+
+   }
+
+   a {
+
+   }
+
+   h2 {
+
+   }
+
+   h3,
+   h4 {
+
+   }
+
+   p {
+
+   }
+
+   img {
+
+   }
+
+   figure {
+
+   }
+
+   address {
+
+   }
+
+   .content-wrapper {
+
+   }
    /* -------------------- Base Header - Footer Styles -------------------- */
    header,
    footer {
