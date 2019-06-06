@@ -244,50 +244,41 @@ textarea {
       About Page
       ========================================================================== */
 
-   .mission {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-   }
+      .mission-content {
+           display:
+           justify-content: space-between;
+           align-items:
+       }
 
-   .contact-section {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-   }
+       .mission-content p {
+           width:
+       }
 
-   .contact-content p {
-      margin: 0;
-    }
+       .contact-section, .content-wrapper h2 {
+           width:
+       }
+
+       .contact-content {
+           display:
+           justify-content:
+           align-items:
+   }
 
    /* ==========================================================================
       FAQ Page
       ========================================================================== */
 
-   .faq {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-   }
+      .faq .content-wrapper {
+          justify-content: space-between;
+      }
 
-   .faq .content-wrapper {
-     margin: 50px 0 0 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-   }
-   .faq h2 {
-     margin-bottom: 40px;
-   }
+      .faq-content {
+          flex-basis: 40%;
+      }
 
-   .faq-content {
-     margin-bottom: 50px;
-   }
-
+      .faq h2 {
+          width: 100%;
+      }
 
  /* ==========================================================================
    Helper classes
@@ -380,14 +371,101 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
+    @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
+    @media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+}
 
+    @media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+}
+
+media only screen and (min-width: 768px) {
+    /* General styles */
+    .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+    }
+
+    /* Header */
+
+    header {
+
+    }
+
+    header .content-wrapper {
+        width:
+    }
+
+    header nav {
+        width:
+    }
+
+    header nav ul {
+
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    /* Hero Area */
+
+    /* Aside */
+    aside .content-wrapper {
+        margin: 50px 0;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width:
+        margin: 0;
+    }
+
+    /* Features */
+
+    .features article {
+      flex-basis: auto;
+
+    }
+
+    .features .features-item-description {
+        width:
+    }
+
+    /* Reviews */
+    .reviews article {
+
+    }
+
+    .reviews article div {
+        width:
+    }
+
+    /* Footer */
+    footer .content-wrapper {
+        width:
+        margin: 100px 0;
+    }
+
+    .footer-content {
+
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+    }
+
+    footer .copyright {
+        width:
+    }
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
