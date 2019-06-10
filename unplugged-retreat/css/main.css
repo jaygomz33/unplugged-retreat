@@ -7,7 +7,6 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -16,24 +15,6 @@
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-}
-
-body {
-       font-family: 'Josefin+Sans', Poppins;
-       font-size: 1em;
-}
-
-h2 {
-     font-family:  'Josefin+Sans', Poppins;
-}
-
-h3,
-h4 {
-     font-family:  'Josefin+Sans', Poppins;
-}
-a {
-     color: #e2e3ed;
-     text-decoration: none;
 }
 /*
  * Remove text-shadow in selection highlight:
@@ -112,9 +93,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-
-
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -124,53 +102,70 @@ textarea {
    /* General Styles */
 
    html {
-
+     	font-size: 16px;
    }
 
    body {
+          font-family: 'Open+Sans',Poppins, sans-serif;
+          font-size: 1em;
+          color: #e2e3ed;
+          text-align: left;
+   }
 
+   a {
+        color: #e2e3ed;
+        text-decoration: none;
    }
 
    ul,
    ol {
-
+     list-style-type: none;
    }
 
    a {
-
+     color: #e2e3ed;
+     text-decoration: none;
    }
-
    h2 {
-
+        font-family:  'Josefin+Sans', 'Open+Sans',Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 1.875em;
    }
 
    h3,
    h4 {
-
+        font-family:  'Josefin+Sans', 'Open+Sans',Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 1.125em;
+        margin: 1.125em 0;
    }
 
-   p {
-
+   p {  font-size: .875em;
+        line-height: 1.285em;
    }
 
    img {
-
+        width: 100%;
    }
 
    figure {
-
+         margin: 0;
    }
 
    address {
+        font-style: normal;
 
    }
 
    .content-wrapper {
+        width: 90%;
+        margin: 50px 0;
 
    }
    /* -------------------- Base Header - Footer Styles -------------------- */
    header,
    footer {
+       background-color: #202322;
        display: flex;
        justify-content: center;
        align-items: center;
@@ -178,27 +173,44 @@ textarea {
    }
 
    header {
-     padding: 15px 0;
+     padding: 0.09375em 0;
    }
    header .content-wrapper {
+     margin: 0;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
-     margin: 0;
+
+
+   }
+   header figure {
+     width: 20%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     background-image: url('../img/unpluggedlogo.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
    }
 
    .header-divider {
-     width: 100%;
+     background: #3a3a3a;
      height: 1px;
+     width: 60%;
      margin: 10px 0 20px 0;
    }
 
    header nav {
-     width: 60%;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
+     width: 20%;
+     font-size: 1.125em;
+     font-weight: 700;
+     text-transform: uppercase;
+     display:  flex;
+     justify-content:  space-around;
+     align-items:  stretch;
      flex-flow: row wrap;
    }
 
@@ -207,8 +219,12 @@ textarea {
      display: flex;
      justify-content: space-around;
    }
+   header nav ul li {
+     font-size: 1.125em;
+   }
 
    footer {
+     text-align: center;
      flex-direction: column;
    }
 
@@ -238,7 +254,7 @@ textarea {
    }
 
    footer .copyright {
-  margin: 20px 0;
+     margin: 20px 0;
 }
 
 
@@ -247,26 +263,62 @@ textarea {
    /* Hero Area */
 
    .hero-area {
-     display: flex;
-     justify-content: center;
-     flex-flow: row wrap;
-   }
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.hero-area h1 {
+font-size: 2.25em;
+}
 
    /* Aside */
 
    aside {
+     background-color: #527158;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
    }
+   aside .form{
+     margin-top: 30px;
+   }
+
+   input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
    /* Features */
 
    .features {
+     background: url('../img/unplugged-retreat-features.jpg');
+     background-size: cover;
+     background-position: center;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+}
    }
 
    .features h2 {
@@ -285,7 +337,10 @@ textarea {
      flex-flow: row wrap;
    }
 
-
+   .features p {
+     text-align: center;
+     margin: 0;
+   }
 
    /* Reviews */
 
@@ -293,10 +348,12 @@ textarea {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background-color: #2a423a;
    }
 
    .reviews h2 {
      margin-bottom: 40px;
+     line-height: 1;
    }
 
 
@@ -310,42 +367,61 @@ textarea {
       About Page
       ========================================================================== */
 
-      .mission-content {
-           display:
+      .mission {
+           background-color: #527158;
+           display: flex;
            justify-content: space-between;
-           align-items:
+           align-items: center;
+           flex-flow: row wrap;
        }
 
-       .mission-content p {
-           width:
-       }
+
 
        .contact-section, .content-wrapper h2 {
-           width:
+         background-color: #2a423a;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-flow: row wrap;
        }
 
-       .contact-content {
-           display:
-           justify-content:
-           align-items:
+       .contact-content p{
+           margin: 0;
    }
 
    /* ==========================================================================
       FAQ Page
       ========================================================================== */
 
-      .faq .content-wrapper {
-          justify-content: space-between;
-      }
+  .faq {
+    background-color: #527158;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
-      .faq-content {
-          flex-basis: 40%;
-      }
+  .faq .content-wrapper {
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
-      .faq h2 {
-          width: 100%;
-      }
+  .faq h2 {
+    margin-bottom: 40px;
+    line-height: 1;
+  }
 
+  .faq-content {
+    margin-bottom: 50px;
+  }
+
+  .faq-content h4 {
+    line-height: 1.333;
+    font-weight: 700;
+  }
  /* ==========================================================================
    Helper classes
    ========================================================================== */
