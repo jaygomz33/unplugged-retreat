@@ -319,7 +319,7 @@ input[type=button] {
      justify-content: center;
      flex-flow: row wrap;
 }
-   }
+
 
    .features h2 {
      margin-bottom: 60px;
@@ -335,6 +335,12 @@ input[type=button] {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+   }
+
+
+   .features i {
+     font-size: 3.75em;
+     margin-bottom: 40px;
    }
 
    .features p {
